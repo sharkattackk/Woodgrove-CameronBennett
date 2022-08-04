@@ -36,7 +36,7 @@
 
 <hr>
 <h4 id="Dexi-NUC">Dexi-Ned Capable intel NUC</h4>
-
+The model which gave a successful result when loaded into the OVMS docker can be downloaded here at<a href="https://drive.google.com/file/d/1aDOetxvIos8pUO_Q3cgRm78PiMYmYI0B/view?usp=sharing">dexinedWGT.ONNX</a>. This model must be placed in a folder titled 
 
 
 <hr>
