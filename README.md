@@ -11,6 +11,7 @@
     <li><a href="#OVMS">Open Vino Model Server</a></li>
     <li><a href="#Dexi-NUC">Dexi-Ned Capable intel NUC</a></li>
 </ul>
+<hr>
 
 <h4 id="Jetson">Jetson Xavier NX</h4>
 <p>On my very first day at Woodgrove I was presented with the first possible solution to this centralized server overload. This soution was the Jetson Xavier NX, pictured below.</p>
