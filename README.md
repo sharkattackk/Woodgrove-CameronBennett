@@ -28,11 +28,14 @@
 <p>Since video processing posed many challenges due to the ubuntu UI, this image was the final attempt made on the Jetson Board before being deemed less viable than alternatives. These alternatives are looked at in the next sections.</p>
 <hr>
 <h4 id="Nuc">Intel Nuc</h4>
-
-
+<p>The next option to achieve the same goal as the Jetson is the Intel NUC. The version we worked with was the Intel NUC 10 Performance NUC10i7FNH. This device is very similar in size to the Jetson however it features it's own housing. The exterior of the board has 3 USB ports, an HDMI port, 19v Power adapter and an SD card port. This is useful for attacthing Input/Output devices such as a keyboard, mouse, and monitor allowing the NUC to behave exactly like any desktop computer. below is an image of the Intel NUC we initially worked on.</p>
+<img src="https://user-images.githubusercontent.com/106261884/182933064-387f70f9-d18b-4108-a8b2-bd8b57a32eb5.jpg">
+<p>Inside the NUC we have a 10th gen intel core, i7 processor, 256 GB NVMe SSD, 1TB HDD, and 16GB RAM. All very impressive satistics even for a full size PC. In addition, unline the Jetson, this device supports Windows 10 Home, allowing for familiar and easy user interface.</p>
+<p>When you get access to a brand new NUC and Windows 10 is set up, the first steps you should take are install and configure an ideal version of python and <a href="https://www.docker.com/">Download Docker</a></p>
 <hr>
 <h4 id="ONVIF">ONVIF Device Manager</h4>
-
+ONVIF device manager is another software that should be installed and configured on the board. It is a protocol that 
+<a href="https://www.youtube.com/watch?v=UC8oGdfJkdI">youtube video</a>
 
 <hr>
 <h4 id="OVMS">Open Vino Model Server</h4>
