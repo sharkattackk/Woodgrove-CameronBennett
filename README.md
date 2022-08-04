@@ -34,9 +34,10 @@
 <p>When you get access to a brand new NUC and Windows 10 is set up, the first steps you should take are install and configure an ideal version of python and <a href="https://www.docker.com/">Download Docker</a></p>
 <hr>
 <h4 id="ONVIF">ONVIF Device Manager</h4>
-ONVIF device manager is another software that should be installed and configured on the board. It is a protocol that 
-<a href="https://www.youtube.com/watch?v=UC8oGdfJkdI">youtube video</a>
-
+<p>ONVIF device manager is another software that should be installed and configured on the board. It is a protocol that can connect to any any IP camera on that network, regardless of company. Simply boot up the program, and a list of all IP cameras which are present on the network will appear in a list. The protocol allows for many specifications including zooming in and out.</p>
+<p> A detailed description can be found at this <a href="https://www.youtube.com/watch?v=UC8oGdfJkdI">youtube video</a>.
+<p>the ONVIF UI is shown below</p>
+<img src=""
 <hr>
 <h4 id="OVMS">Open Vino Model Server</h4>
 
