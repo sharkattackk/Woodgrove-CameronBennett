@@ -19,10 +19,11 @@
 <p>Below is a screen capture of the output running yolov5 object detection software. This was operating at nearly 30 fps and very smoothly.</p>
 <img src="https://user-images.githubusercontent.com/106261884/182909473-900ac5ba-027c-4b01-b13a-acf7893ebaf1.png" style="height:300px;width:280.9px">
 <p>Though this was a great sign, the board proved to be inadequete for the tasks Woodgrove would ask of it. </p>
-
-
 <hr>
 <h4 id="Dexi-SD">Dexi-NedCapable SD Image</h4>
+<p>Numerous re-flashes of the SD card were required to untangle to various versions of Dexi-Ned's dependencies. To save the next developer the time of installing and organizing <a href="https://www.python.org/downloads/release/python-370/g">Python 3.7</a>, <a href="https://pytorch.org/">Pytorch >=1.4 <= 1.9</a>, <a href="https://pypi.org/project/opencv-python/">OpenCV</a>, <a href="https://matplotlib.org/3.1.1/users/installing.html">Matplotlib</a>, and <a href="https://kornia.github.io/">Kornia</a> I have provided a Dexi-Ned capable SD image with all of these dependencies isntalled. To get this image onto the boards operating system, simply flash the SD card using <a href="https://www.balena.io/etcher/">belena etcher</a> and remember to wipe the SD card prior.</p>
+<p>Below is a sample output of running the main.py file from the <a href="https://github.com/xavysp/DexiNed">Dexi-Ned Github repository</a></p>
+<img src="https://user-images.githubusercontent.com/106261884/182916786-07e25bfe-f4e2-4ec7-a1d0-c77a19c827b5.png" style="height:300px;width:280.9px">
 
 <hr>
 <h4 id="Nuc">Intel Nuc</h4>
