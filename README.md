@@ -22,9 +22,9 @@
 <hr>
 <h4 id="Dexi-SD">Dexi-NedCapable SD Image</h4>
 <p>Numerous re-flashes of the SD card were required to untangle to various versions of Dexi-Ned's dependencies. To save the next developer the time of installing and organizing <a href="https://www.python.org/downloads/release/python-370/g">Python 3.7</a>, <a href="https://pytorch.org/">Pytorch >=1.4 <= 1.9</a>, <a href="https://pypi.org/project/opencv-python/">OpenCV</a>, <a href="https://matplotlib.org/3.1.1/users/installing.html">Matplotlib</a>, and <a href="https://kornia.github.io/">Kornia</a> I have provided a Dexi-Ned capable SD image with all of these dependencies isntalled. To get this image onto the boards operating system, simply flash the SD card using <a href="https://www.balena.io/etcher/">belena etcher</a> and remember to wipe the SD card prior.</p>
-<p>Below is a sample output of running the main.py file from the <a href="https://github.com/xavysp/DexiNed">Dexi-Ned Github repository</a></p>
+<p>Below is a sample output of running the main.py file from the <a href="https://github.com/xavysp/DexiNed">Dexi-Ned Github repository</a> operating on this SD image.</p>
 <img src="https://user-images.githubusercontent.com/106261884/182916786-07e25bfe-f4e2-4ec7-a1d0-c77a19c827b5.png" style="height:300px;width:280.9px">
-
+<p>Since video processing posed many challenges due to the ubuntu UI, this image was the final attempt made on the Jetson Board before being deemed less viable than alternatives. These alternatives are looked at in the next sections.</p>
 <hr>
 <h4 id="Nuc">Intel Nuc</h4>
 
