@@ -16,7 +16,7 @@
 <p>On my very first day at Woodgrove I was presented with the first possible solution to this centralized server overload. This soution was the Jetson Xavier NX, pictured below.</p>
 <img src= "https://hackster.imgix.net/uploads/attachments/1120136/_irA6vV6H9j.blob?auto=&format=jpg" style="height:300px;width:280.9px">
 <p>This device is an impressive computer, featuring 384-core NVIDIA GPU and 48 Tensor cores as well as 6-core 64 bit NVIDIA CPU all with only 70mm x 40mm to work with. The device is specifically designed for running inference on videos and computer vision, hence its powerful GPU</p>
-<a href="https://user-images.githubusercontent.com/106261884/182909473-900ac5ba-027c-4b01-b13a-acf7893ebaf1.png">here</a>
+https://user-images.githubusercontent.com/106261884/182909473-900ac5ba-027c-4b01-b13a-acf7893ebaf1.png
 
 
 <hr>
