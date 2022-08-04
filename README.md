@@ -15,8 +15,10 @@
 <h4 id="Jetson">Jetson Xavier NX</h4>
 <p>On my very first day at Woodgrove I was presented with the first possible solution to this centralized server overload. This soution was the Jetson Xavier NX, pictured below.</p>
 <img src= "https://hackster.imgix.net/uploads/attachments/1120136/_irA6vV6H9j.blob?auto=&format=jpg" style="height:300px;width:280.9px">
-<p>This device is an impressive computer, featuring 384-core NVIDIA GPU and 48 Tensor cores as well as 6-core 64 bit NVIDIA CPU all with only 70mm x 40mm to work with. The device is specifically designed for running inference on videos and computer vision, hence its powerful GPU</p>
-https://user-images.githubusercontent.com/106261884/182909473-900ac5ba-027c-4b01-b13a-acf7893ebaf1.png
+<p>This device is an impressive computer, featuring 384-core NVIDIA GPU and 48 Tensor cores as well as 6-core 64 bit NVIDIA CPU all with only 70mm x 40mm to work with. The device is specifically designed for running inference on videos and computer vision, hence its powerful GPU. The first tests I ran on this device were trying out different pretrained AI models from different providers such as jetson-inference and yolov5. These tests were to confirm the jetsons ability to handle live stream image processing and to determine if it would be able to handle our tasks.</p>
+<p>Below is a screen capture of the output running yolov5 object detection software. This was operating at nearly 30 fps and very smoothly.</p>
+<img src="https://user-images.githubusercontent.com/106261884/182909473-900ac5ba-027c-4b01-b13a-acf7893ebaf1.png" style="height:300px;width:280.9px">
+<p>Though this was a great sign, the board proved to be inadequete for the tasks Woodgrove would ask of it. </p>
 
 
 <hr>
