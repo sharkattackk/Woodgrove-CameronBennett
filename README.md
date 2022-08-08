@@ -40,12 +40,21 @@
 <img src="https://user-images.githubusercontent.com/106261884/183118988-eaaaec3e-0501-4929-9145-20e049b57373.png" style="height:300px;width:280.9px">
 <hr>
 <h4 id="OVMS">Open Vino Model Server</h4>
-<p>The Open Vino Model Server opened up several doors and proved to be the most important piece of the puzzle. </p>
+<p>The Open Vino Model Server opened up several doors and proved to be the most important piece of the puzzle. OVMS is a docker image which can be launched using a <a href="https://www.docker.com/">docker</a> container. This launches a server with a few customizeable traits. These traits consist of information about a model. This model can be any .onnx, .xml, .pth model that can process video streams through neural networks in a contained virtual environment of the OV model server.</p>
+<p>To launch the docker container with the OVMS docker image, run the following command.</p>
 
-
+``` 
+docker run -d -v /c/Users/Matin/model:/models -p 9000:9000 openvino/model_server:latest --model_path /models --model_name DexiNed-Woodgrove --port 9000 --shape auto
+```  
+<p>Please see the following section to ensure that the correct onnx or xml model is in fact located in /c/Users/Matin/model.</p>
+<p>This single command will create a model server on port 9000 where any neural network model, in this case DexiNed, will be able loaded in. </P>
 <hr>
 <h4 id="Dexi-NUC">Dexi-Ned Capable intel NUC</h4>
-The model which gave a successful result when loaded into the OVMS docker can be downloaded here at <a href="https://drive.google.com/file/d/1aDOetxvIos8pUO_Q3cgRm78PiMYmYI0B/view?usp=sharing">dexinedWGT.ONNX</a>. This model must be placed in a folder titled 
+<p>The model which gave a successful result when loaded into the OVMS docker can be downloaded here at <a href="https://drive.google.com/file/d/1aDOetxvIos8pUO_Q3cgRm78PiMYmYI0B/view?usp=sharing">dexinedWGT.ONNX</a>. This model must be placed in a folder titled /c/Users/Matin/model as previously mentioned.</p>
+<p>Once you run the command in the previous section, you now have a model server loaded with the above DexiNed model and are ready to run inference on an image, video, or livestream. The next step is to run the dexined-woodgrove.py file found above with a few specified parameters.</p>
 
+```
+python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 1024 -c 1 -i localhost -p 9000
+```
 
 <hr>
