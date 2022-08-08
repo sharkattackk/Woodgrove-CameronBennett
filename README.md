@@ -37,10 +37,10 @@
 <p>ONVIF device manager is another software that should be installed and configured on the board. It is a protocol that can connect to any any IP camera on that network, regardless of company. Simply boot up the program, and a list of all IP cameras which are present on the network will appear in a list. The protocol allows for many specifications including zooming in and out.</p>
 <p> A detailed description can be found at this <a href="https://www.youtube.com/watch?v=UC8oGdfJkdI">youtube video</a>.
 <p>the ONVIF UI is shown below</p>
-<img src=""
+<img src="https://user-images.githubusercontent.com/106261884/183118988-eaaaec3e-0501-4929-9145-20e049b57373.png" style="height:300px;width:280.9px">
 <hr>
 <h4 id="OVMS">Open Vino Model Server</h4>
-
+<p>The Open Vino Model Server opened up several doors and proved to be the most important piece of the puzzle. </p>
 
 
 <hr>
