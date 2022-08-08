@@ -10,6 +10,7 @@
     <li><a href="#ONVIF">ONVIF Device Manager</a></li>
     <li><a href="#OVMS">Open Vino Model Server</a></li>
     <li><a href="#Dexi-NUC">Dexi-Ned Capable intel NUC</a></li>
+    <li><a href="#next">Next Steps</a></li>
 </ul>
 <hr>
 
@@ -54,7 +55,23 @@ docker run -d -v /c/Users/Matin/model:/models -p 9000:9000 openvino/model_server
 <p>Once you run the command in the previous section, you now have a model server loaded with the above DexiNed model and are ready to run inference on an image, video, or livestream. The next step is to run the dexined-woodgrove.py file found above with a few specified parameters.</p>
 
 ```
-python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 1024 -c 1 -i localhost -p 9000
+python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -i localhost -p 9000
 ```
+<p>Here the '-n' argument is the model name. Must be the same as the "--model_name" argument passed when launching the docker container. The "-l" and "-o" are the input and output layers respetively and can be confirmed by opening the model in a visualizer such as <a href="https://netron.app/">Netron</a>. The -d argument is the shape of frame expected by the model. This can also be confirmed by opening the model on Netron. This is one area where there is need for improvement because an inreased frame size leads to a mroe accurate segmentation. The "-c" argument is simply the number of camera inputs to be expected, and can be replaced or work in parallel with "-f" which must be followed by a path to a video file. Finally, the "-i" and "-p" arguments point the program to the desired model server, which was also defined when launching the server.</p>
+
+<p>If all excecuted correctly, you should be seeing a 352 x 352 window titled "dexi stream" which should show the output of your camera with all lines/edges in the frame closer to white(255) while the rest closer to black(0). If so, you have successfully run Dexi-Ned inference on a livestream through the intel NUC. This is a great first step, and now all thats required is optimization, performance enhancements, and further specifications to create a viable solution that Woodgrove can offer clients.</p>
+<hr>
+<h4 id="next">Next Steps</h4>
+<p>The next steps to take from the point currently reached</p>
+
+
+
+
+
+
+
+
+
+
 
 <hr>
