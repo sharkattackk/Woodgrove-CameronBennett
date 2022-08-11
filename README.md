@@ -65,8 +65,8 @@ python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -
 <h4 id="next">Next Steps</h4>
 <p>The end product should incorporate the woodgrove crafted software which is based on Dexi-Ned, which can distinguish between fine rocks, connected rocks, and single rocks. This solution should also offer strong performance comparable to that of the desktop computer currently in use.</p>
 <p>Below captures the desired output after implementing Woodgroves software</p>
-<img src="https://drive.google.com/file/d/1DsDZqdiV0OsSzmh0Q8s618e-jTVob0xi/view?usp=sharing" style="height:300px;width:280.9px">
+<img src="https://user-images.githubusercontent.com/106261884/184170372-2c40c3e8-70f6-4e64-a321-c5949b32929a.PNG" style="height:300px;width:280.9px">
 <p>The next step in producing this result are to enhance the performance of the current DexiNed stream we have achieved. There are several ways to approach this task with the most signifacen change occuring when the program can switch from the CPU to the iGPU.</p>
 <hr>
 <h4 id="resources">Useful Resources</h4>
-
+<a href="https://github.com/openvinotoolkit/model_server">DexiNed Github </a>
