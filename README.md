@@ -11,6 +11,7 @@
     <li><a href="#OVMS">Open Vino Model Server</a></li>
     <li><a href="#Dexi-NUC">Dexi-Ned Capable intel NUC</a></li>
     <li><a href="#next">Next Steps</a></li>
+    <li><a href="#resources">Useful Resources</a></li>
 </ul>
 <hr>
 
@@ -62,16 +63,10 @@ python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -
 <p>If all excecuted correctly, you should be seeing a 352 x 352 window titled "dexi stream" which should show the output of your camera with all lines/edges in the frame closer to white(255) while the rest closer to black(0). If so, you have successfully run Dexi-Ned inference on a livestream through the intel NUC. This is a great first step, and now all thats required is optimization, performance enhancements, and further specifications to create a viable solution that Woodgrove can offer clients.</p>
 <hr>
 <h4 id="next">Next Steps</h4>
-<p>The next steps to take from the point currently reached</p>
-
-
-
-
-
-
-
-
-
-
-
+<p>The end product should incorporate the woodgrove crafted software which is based on Dexi-Ned, which can distinguish between fine rocks, connected rocks, and single rocks. This solution should also offer strong performance comparable to that of the desktop computer currently in use.</p>
+<p>Below captures the desired output after implementing Woodgroves software</p>
+<img src="https://drive.google.com/file/d/1DsDZqdiV0OsSzmh0Q8s618e-jTVob0xi/view?usp=sharing" style="height:300px;width:280.9px">
+<p>The next step in producing this result are to enhance the performance of the current DexiNed stream we have achieved. There are several ways to approach this task with the most signifacen change occuring when the program can switch from the CPU to the iGPU.</p>
 <hr>
+<h4 id="resources">Useful Resources</h4>
+
