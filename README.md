@@ -69,4 +69,5 @@ python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -
 <p>The next step in producing this result are to enhance the performance of the current DexiNed stream we have achieved. There are several ways to approach this task with the most signifacen change occuring when the program can switch from the CPU to the iGPU.</p>
 <hr>
 <h4 id="resources">Useful Resources</h4>
-<a href="https://github.com/openvinotoolkit/model_server">DexiNed Github </a>
+<a href="https://github.com/openvinotoolkit/model_server">Open Vino Model Server Github</a>
+<a href="https://github.com/xavysp/DexiNed">DexiNed Github</a>
