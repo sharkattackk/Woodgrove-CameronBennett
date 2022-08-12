@@ -24,7 +24,7 @@
 <p>Though this was a great sign, the board proved to be inadequete for the tasks Woodgrove would ask of it. </p>
 <hr>
 <h4 id="Dexi-SD">Dexi-Ned Capable SD Image</h4>
-<p>Numerous re-flashes of the SD card were required to untangle to various versions of Dexi-Ned's dependencies. To save the next developer the time of installing and organizing <a href="https://www.python.org/downloads/release/python-370/g">Python 3.7</a>, <a href="https://pytorch.org/">Pytorch >=1.4 <= 1.9</a>, <a href="https://pypi.org/project/opencv-python/">OpenCV</a>, <a href="https://matplotlib.org/3.1.1/users/installing.html">Matplotlib</a>, and <a href="https://kornia.github.io/">Kornia</a>. Important to note that this OpenCV is bootable on the Jetson and is capable of running any OpenCV based programs for image processing. This is version 4.4.1 of OpenCV. I have provided a Dexi-Ned capable SD image with all of these dependencies isntalled. To get this image onto the boards operating system, simply flash the SD card using <a href="https://www.balena.io/etcher/">belena etcher</a> and remember to wipe the SD card prior.</p>
+<p>Numerous re-flashes of the SD card were required to untangle to various versions of Dexi-Ned's dependencies. To save the next developer the time of installing and organizing <a href="https://www.python.org/downloads/release/python-370/g">Python 3.7</a>, <a href="https://pytorch.org/">Pytorch >=1.4 <= 1.9</a>, <a href="https://pypi.org/project/opencv-python/">OpenCV</a>, <a href="https://matplotlib.org/3.1.1/users/installing.html">Matplotlib</a>, and <a href="https://kornia.github.io/">Kornia</a>. Important to note that this OpenCV is bootable on the Jetson and is capable of running any OpenCV based programs for image processing. This was tested on the jetson board using yoloV5 and jetson-inference software. The OpenCV version 4.4.1 was used to draw bounding boxes on areas of the images of interest. I have provided a Dexi-Ned capable SD image with all of these dependencies isntalled. To get this image onto the boards operating system, simply flash the SD card using <a href="https://www.balena.io/etcher/">belena etcher</a> and remember to wipe the SD card prior.</p>
 <p>Below is a sample output of running the main.py file from the <a href="https://github.com/xavysp/DexiNed">Dexi-Ned Github repository</a> operating on this SD image.</p>
 <img src="https://user-images.githubusercontent.com/106261884/182916786-07e25bfe-f4e2-4ec7-a1d0-c77a19c827b5.png" style="height:300px;width:280.9px">
 <p>Since video processing posed many challenges due to the ubuntu UI, this image was the final attempt made on the Jetson Board before being deemed less viable than alternatives. These alternatives are looked at in the next sections.</p>
@@ -69,5 +69,10 @@ python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -
 <p>The next step in producing this result are to enhance the performance of the current DexiNed stream we have achieved. There are several ways to approach this task with the most signifacen change occuring when the program can switch from the CPU to the iGPU.</p>
 <hr>
 <h4 id="resources">Useful Resources</h4>
-<a href="https://github.com/openvinotoolkit/model_server">Open Vino Model Server Github</a>
-<a href="https://github.com/xavysp/DexiNed">DexiNed Github</a>
+<ul>
+    <li><a href="https://github.com/openvinotoolkit/model_server">Open Vino Model Server Github</a></li>
+    <li><a href="https://github.com/xavysp/DexiNed">DexiNed Github</a></li>
+    <li><a href="https://pytorch.org/hub/ultralytics_yolov5/#:~:text=YOLOv5%20%F0%9F%9A%80%20is%20a%20family,size">YoloV5</a></li>
+    <li><a href="https://github.com/openvinotoolkit/openvino_notebooks">Open Vino Notebooks</a></li>
+ 
+</ul>
