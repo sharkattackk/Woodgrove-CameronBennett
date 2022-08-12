@@ -74,5 +74,4 @@ python dexined-woodgrove.py -n dexined-woodgrove -l input.1 -o 502 -d 352 -c 1 -
     <li><a href="https://github.com/xavysp/DexiNed">DexiNed Github</a></li>
     <li><a href="https://pytorch.org/hub/ultralytics_yolov5/#:~:text=YOLOv5%20%F0%9F%9A%80%20is%20a%20family,size">YoloV5</a></li>
     <li><a href="https://github.com/openvinotoolkit/openvino_notebooks">Open Vino Notebooks</a></li>
- 
 </ul>
